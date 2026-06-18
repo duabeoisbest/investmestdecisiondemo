@@ -5,8 +5,8 @@ from statsmodels.tsa.arima.model import ARIMA
 
 def analyze_stock_data(historical_data):
     """
-    Nhận vào dataframe chứa giá đóng cửa (close) 
-    và trả về dự đoán xu hướng.
+    INPUT: Dataframe mit Closed
+    OUTPUT: Trend
     """
     df = pd.DataFrame(historical_data)
     prices = df['close'].astype(float).values

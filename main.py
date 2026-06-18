@@ -20,7 +20,7 @@ def get_stock_analysis(symbol: str):
     data = response.json()
     
     if "Time Series (Daily)" not in data:
-        raise HTTPException(status_code=400, detail="Không tìm thấy mã cổ phiếu hoặc lỗi API Key.")
+        raise HTTPException(status_code=400, detail="Kursdaten nicht gefunden oder Error in API Key.")
         
     
     time_series = data["Time Series (Daily)"]

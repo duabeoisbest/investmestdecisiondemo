@@ -1,0 +1,5 @@
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0        # Để gọi API từ backend
+  fl_chart: ^0.66.0   # Để vẽ biểu đồ trực quan (Trendvisualisierungen)

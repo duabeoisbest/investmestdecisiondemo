@@ -9,3 +9,5 @@ main.dart
 pubspec.yaml: benötigte Bib bei dart
 stock_model.dart
 api_service.dart
+
+UPDATE 05.08.06:FRONTEND

@@ -1,10 +1,10 @@
 from fastapi import FastAPI, HTTPException
 import requests
-from analyzer import analyze_stock_data
+from backend.lstmundarima import analyze_stock_data
 
 app = FastAPI(title="Stock Analyzer Hybrid API")
 
-ALPHA_VANTAGE_KEY = "YOUR_ALPHA_VANTAGE_KEY" 
+ALPHA_VANTAGE_KEY = "3AQSVO4QKLEOHBUJY" 
 BASE_URL = "https://www.alphavantage.co/query"
 
 @app.get("/api/stock/{symbol}")
@@ -46,4 +46,4 @@ def get_stock_analysis(symbol: str):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(main:app, host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

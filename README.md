@@ -11,6 +11,7 @@ stock_model.dart
 api_service.dart
 
 UPDATE 05.08.06:FRONTEND
+UPDATE 19-21.08: API Key & import path change
 
 ## 🚀 Hauptfunktionen
 
